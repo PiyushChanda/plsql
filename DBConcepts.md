@@ -73,3 +73,15 @@ Anomalies
 1. Insertion Anomaly
 2. Updation/Deletion Anomaly
 
+Converting ER to Relational Model
+---------------------------------
+
+1 - 1, with total participation from one side - 1 table is sufficient
+1 - 1, with partial participation on both sides - 2 table is sufficient
+n - 1, 2 table is sufficient
+n - m, 3 table is sufficient
+1 - m, in case of dependent table, where there is full participation, since dependent table cannot exist without it's
+parent table - 2 tables is sufficient
+
+Convert each of the entities and relations as tables, try to merge them. If after merge, atleast primary key of one of the original table remains unique with no null values, then that merger can be considered successful.
+
